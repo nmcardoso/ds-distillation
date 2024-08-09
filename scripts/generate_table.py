@@ -8,8 +8,8 @@ def main():
   variants = sorted([f.name[7:-3] for f in files])
   for v in variants:
     tag_pattern = '<a href="https://github.com/nmcardoso/ds-distillation/raw/main/outputs/{f}">{f}</a>'
-    image = tag_pattern.format(f=f'image_{v}.pt')
-    image_zca = tag_pattern.format(f=f'image_zca_{v}.pt')
+    image = tag_pattern.format(f=f'images_{v}.pt')
+    image_zca = tag_pattern.format(f=f'images_zca_{v}.pt')
     labels = tag_pattern.format(f=f'labels_{v}.pt')
     print(f'<tr><td>{v}</td><td>{image}</td><td>{image_zca}</td><td>{labels}</td></tr>')
 
