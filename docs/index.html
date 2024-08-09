@@ -53,6 +53,7 @@
         <li>Criação do ambiente virtual</li>
         <pre><code class="language-bash">cd mtt-distilation</code></pre>
         <pre><code class="language-bash">conda env create -f requirements_11_3.yaml</code></pre>
+        <pre><code class="language-bash">conda activate distillation</code></pre>
 
         <li>Geração das trajetórias</li>
         <pre><code class="language-bash">python buffer.py --dataset=CIFAR100 --model=ConvNet --train_epochs=50 --num_experts=100 --zca --buffer_path={path_to_buffer_storage} --data_path={path_to_dataset}</code></pre>
